@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 cd
 apt update
-apt dist-upgrade
+apt upgrade
 apt install tor
 sudo apt-get install python-dev python-setuptools libpcap0.8-dev libnetfilter-queue-dev
 sudo apt-get install libssl-dev libjpeg-dev libxml2-dev libxslt1-dev python-pip git
@@ -12,10 +12,6 @@ sudo pip install virtualenvwrapper
 apt-get install python3-pip
 apt-get install libglib2.0-dev
 python3 -m pip install bluepy
-sudo -s
-source /usr/local/bin/virtualenvwrapper.sh
-mkvirtualenv MITMf -p /usr/bin/python2.7
-sudo pip install requests[security]
 git clone https://github.com/byt3bl33d3r/MITMf
 cd MITMf && git submodule init && git submodule update --recursive
 pip install -r requirements.txt
@@ -46,24 +42,16 @@ cd Striker
 pip install -r requirements.txt
 cd
 pip install raccoon-scanner
-bash <(wget -qO- https://git.io/vAtmB)
 git clone https://github.com/s0md3v/Photon.git
 cd Photon
 pip3 install -r requirements.txt
 cd
 git clone https://github.com/Moham3dRiahi/Th3inspector.git
 cd Th3inspector
-chmod +x install.sh && ./install.sh
+chmod +x install.sh
 cd
 git clone git@github.com:jonluca/Anubis.git
-cd Anubis
-pip3 install  -r requirements.txt
-pip3 install .
-cd
 git clone https://github.com/m4ll0k/Infoga.git infoga
-cd infoga
-python setup.py install
-cd
 git clone https://github.com/zdresearch/OWASP-Nettacker.git
 apt install python3-pip python3-gi phantomjs mitmproxy ffmpeg gir1.2-gtk-vnc-2.0 gir1.2-gtksource-3.0 gir1.2-vte-2.91 gir1.2-osmgpsmap-1.0 gir1.2-webkit2-4.0
 git clone https://github.com/r3vn/badKarma.git
@@ -72,18 +60,14 @@ chmod +x badkarma.py
 pip3 install -r requirements.txt
 cd
 git clone https://github.com/1N3/Sn1per.git
-cd Sn1per
-bash install.sh
-cd
 git clone https://github.com/D4Vinci/Dr0p1t-Framework.git
 chmod 777 -R Dr0p1t-Framework
 cd Dr0p1t-Framework
 sudo chmod +x install.sh
-./install.sh
 cd
 git clone https://github.com/Screetsec/TheFatRat.git
 cd TheFatRat
-chmod +x setup.sh && ./setup.sh
+chmod +x setup.sh
 chmod +x fatrat
 chmod +x powerfull.sh
 cd
@@ -94,26 +78,18 @@ chmod +x install.sh
 cd
 git clone https://github.com/xdavidhu/mitmAP
 git clone https://github.com/codingo/Reconnoitre.git
-cd Reconnoitre
-python setup.py install
-cd
 apt install -y msfpc
-git clone --recursive https://github.com/trimstray/sandmap
-cd sandmap
-./setup.sh install
-cd
+git clone https://github.com/trimstray/sandmap
 git clone https://github.com/radenvodka/SVScanner.git
 git clone https://github.com/NullArray/AutoSploit
 cd AutoSploit
 chmod +x install.sh
-./install.sh
 cd
 git clone https://github.com/commixproject/commix.git commix
 git clone https://github.com/AlisamTechnology/ATSCAN
 cd ATSCAN
 chmod +x ./atscan.pl
 chmod +x ./install.sh
-./install.sh
 cd
 git clone https://github.com/Moham3dRiahi/XAttacker.git
 git clone https://github.com/v3n0m-Scanner/V3n0M-Scanner.git
